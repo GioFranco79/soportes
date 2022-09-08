@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaPrincipal</class>
+ <widget class="QMainWindow" name="VentanaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1021</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Soportes V1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagenes.qrc">
+    <normaloff>:/images/soporte.ico</normaloff>:/images/soporte.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1001</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1021</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir_Cat_logo"/>
+    <addaction name="actionCrear_Cat_logo"/>
+    <addaction name="actionCerrar_Cat_logo"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuSoportes">
+    <property name="title">
+     <string>Soportes</string>
+    </property>
+    <widget class="QMenu" name="menuListar_Soportes">
+     <property name="title">
+      <string>Listar Soportes</string>
+     </property>
+     <addaction name="actionListado_filtrado"/>
+     <addaction name="actionListado_de_caratulas"/>
+     <addaction name="actionListado_doble"/>
+    </widget>
+    <addaction name="actionBuscar_Soporte"/>
+    <addaction name="menuListar_Soportes"/>
+    <addaction name="separator"/>
+    <addaction name="actionIngresar_Soporte"/>
+    <addaction name="actionModificar_Soporte"/>
+    <addaction name="actionBorrar_Soporte"/>
+   </widget>
+   <widget class="QMenu" name="menuRecursos">
+    <property name="title">
+     <string>Recursos</string>
+    </property>
+    <widget class="QMenu" name="menuIngresar_recurso">
+     <property name="title">
+      <string>Ingresar recurso</string>
+     </property>
+     <addaction name="actionGenero"/>
+     <addaction name="actionSoporte"/>
+     <addaction name="actionUbicacion"/>
+    </widget>
+    <widget class="QMenu" name="menuBorrar_recurso">
+     <property name="title">
+      <string>Borrar recurso</string>
+     </property>
+     <addaction name="actionGenero_2"/>
+     <addaction name="actionSoporte_2"/>
+     <addaction name="actionUbicacion_2"/>
+    </widget>
+    <addaction name="menuIngresar_recurso"/>
+    <addaction name="menuBorrar_recurso"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAyuda"/>
+    <addaction name="actionAcerca_de"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuSoportes"/>
+   <addaction name="menuRecursos"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionBuscar_Soporte">
+   <property name="text">
+    <string>Buscar Soporte</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionIngresar_Soporte">
+   <property name="text">
+    <string>Ingresar Soporte</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionModificar_Soporte">
+   <property name="text">
+    <string>Modificar Soporte</string>
+   </property>
+  </action>
+  <action name="actionBorrar_Soporte">
+   <property name="text">
+    <string>Borrar Soporte</string>
+   </property>
+  </action>
+  <action name="actionAbrir_Cat_logo">
+   <property name="icon">
+    <iconset resource="imagenes.qrc">
+     <normaloff>:/images/soporte.ico</normaloff>:/images/soporte.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir Catálogo</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Cat_logo">
+   <property name="text">
+    <string>Cerrar Catálogo</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionGenero">
+   <property name="text">
+    <string>Genero</string>
+   </property>
+  </action>
+  <action name="actionSoporte">
+   <property name="text">
+    <string>Soporte</string>
+   </property>
+  </action>
+  <action name="actionUbicacion">
+   <property name="text">
+    <string>Ubicacion</string>
+   </property>
+  </action>
+  <action name="actionBuscar_usuario">
+   <property name="text">
+    <string>Buscar usuario</string>
+   </property>
+  </action>
+  <action name="actionListar_usuarios">
+   <property name="text">
+    <string>Listar usuarios</string>
+   </property>
+  </action>
+  <action name="actionIngresar_usuario">
+   <property name="text">
+    <string>Ingresar usuario</string>
+   </property>
+  </action>
+  <action name="actionModificar_usuario">
+   <property name="text">
+    <string>Modificar usuario</string>
+   </property>
+  </action>
+  <action name="actionBorrar_usuario">
+   <property name="text">
+    <string>Borrar usuario</string>
+   </property>
+  </action>
+  <action name="actionAyuda">
+   <property name="text">
+    <string>Ayuda</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="text">
+    <string>Acerca de...</string>
+   </property>
+  </action>
+  <action name="actionListado_filtrado">
+   <property name="text">
+    <string>Listado filtrado</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionListado_de_caratulas">
+   <property name="text">
+    <string>Listado de caratulas</string>
+   </property>
+  </action>
+  <action name="actionListado_doble">
+   <property name="text">
+    <string>Listado doble</string>
+   </property>
+  </action>
+  <action name="actionGenero_2">
+   <property name="text">
+    <string>Genero</string>
+   </property>
+  </action>
+  <action name="actionSoporte_2">
+   <property name="text">
+    <string>Soporte</string>
+   </property>
+  </action>
+  <action name="actionUbicacion_2">
+   <property name="text">
+    <string>Ubicacion</string>
+   </property>
+  </action>
+  <action name="actionCrear_Cat_logo">
+   <property name="text">
+    <string>Crear Catálogo</string>
+   </property>
+  </action>
+  <action name="actionIngresar">
+   <property name="text">
+    <string>Ingresar</string>
+   </property>
+  </action>
+  <action name="actionModificar">
+   <property name="text">
+    <string>Modificar</string>
+   </property>
+  </action>
+  <action name="actionBorrar">
+   <property name="text">
+    <string>Borrar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

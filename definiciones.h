@@ -1,0 +1,6 @@
+#ifndef DEFINICIONES_H
+#define DEFINICIONES_H
+
+#define TCARATULA 524288
+
+#endif // DEFINICIONES_H
